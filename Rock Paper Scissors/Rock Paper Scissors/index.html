@@ -8,7 +8,71 @@
 
 <body>
 
-    <script></script>
+    <script>
+
+        let a = "Rock";
+
+        let b = "Paper";
+
+        let c = "Scissors";
+
+        let options =  [a , b , c];
+
+        let getComputerChoice = options[Math.trunc(Math.random() * options.length)];
+        console.log(getComputerChoice);
+
+        let playerchoice = prompt("What is your choice??");
+        console.log(playerchoice);
+
+       function roundplay(){
+            
+            if(playerchoice === "Rock" , "rock" && getComputerChoice === "Rock"){
+                
+                alert("Tie!");
+                
+            }else if(playerchoice === "Rock" , "rock" && getComputerChoice === "Paper"){
+
+                alert("You lost! Paper beats Rock!");
+
+            }else if(playerchoice === "Rock" , "rock" && getComputerChoice === "Scissors"){
+
+                alert("You won!");
+
+            }else if(playerchoice === "Paper" , "paper" && getComputerChoice === "Rock"){
+
+                alert("You won!");
+
+            }else if(playerchoice === "Paper" , "paper" && getComputerChoice === "Paper"){
+
+                alert("Tie!");
+
+            }else if(playerchoice === "Paper" , "paper" && getComputerChoice === "Scissors"){
+
+                alert("You lost! Scissors beat Paper!");
+
+            }else if(playerchoice === "Scissors" , "scissors" && getComputerChoice === "Rock"){
+
+                alert("You lost! Rock beats Scissors!");
+
+            }else if(playerchoice === "Scissors" , "scissors" && getComputerChoice === "Paper"){
+
+                alert("You won!");
+
+            }else if(playerchoice === "Scissors" , "scissors" && getComputerChoice === "Scissors"){
+
+                alert("Tie!");
+
+            }else{
+                alert("Error!");
+            }
+        }
+
+        roundplay();
+
+
+
+
+    </script>
     
 </body>
 
